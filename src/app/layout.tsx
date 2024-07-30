@@ -15,14 +15,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode,
+  modal: React.ReactNode
 }>) {
   return (
     <html lang="en">
       <body className={`${roboto.className} bg-zinc-50 text-zinc-900`}>
         <Header />
         {children}
+        {modal}
       </body>
     </html>
   );

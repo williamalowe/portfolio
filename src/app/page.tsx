@@ -1,5 +1,6 @@
 import Intro from "@/components/intro";
 import IntroPicture from "@/components/intro-picture";
+import LinksArrow from "@/components/links-arrow";
 import Socials from "@/components/socials";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="w-full max-w-[1200px] flex items-start">
         <Socials />
       </div>
+      <LinksArrow />
     </main>
   );
 }
