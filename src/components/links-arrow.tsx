@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export default function LinksArrow() {
   return (
     <motion.div 
-      className="absolute right-4 bottom-16 flex flex-col items-center gap-y-12"
+      className="flex flex-col items-center gap-y-12"
       initial={{
         y: 32
       }}
