@@ -19,7 +19,7 @@ export default function Socials() {
         <>
           {index !== 0 && "/"}
           <li key={link.name} className="opacity-60 hover:opacity-100 transition duration-300">
-            <a href={link.href} className="underline underline-offset-2">{link.name}</a>
+            <a href={link.href}>{link.name}</a>
           </li>
         </>
       ))}
