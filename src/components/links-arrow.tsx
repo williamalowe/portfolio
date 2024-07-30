@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export default function LinksArrow() {
   return (
     <motion.div 
-      className="absolute right-4 flex flex-col items-center gap-y-12"
+      className="absolute right-4 bottom-16 flex flex-col items-center gap-y-12"
       initial={{
         y: 32
       }}
@@ -18,11 +18,11 @@ export default function LinksArrow() {
         repeatType: "reverse"
       }}
     >
+      <p className="-rotate-90 uppercase tracking-wider">Scroll down</p>
       <div className="relative w-[2px] h-32">
         <div className="absolute top-0 left-0 w-[2px] h-32 bg-zinc-600"/>
-        <div className="absolute top-0 -left-[4px] w-[2px] h-4 bg-zinc-600 rotate-[30deg]"/>
+        <div className="absolute bottom-0 -left-[4px] w-[2px] h-4 bg-zinc-600 -rotate-[30deg]"/>
       </div>
-      <p className="-rotate-90 uppercase tracking-wider underline underline-offset-4">Click Links</p>
     </motion.div>
   )
 }
