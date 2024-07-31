@@ -34,7 +34,9 @@ export default function Intro() {
         <Socials />
       </div>
       <div className="absolute bottom-16 right-0">
-        <LinksArrow />
+        <LinksArrow 
+          href="#about"
+        />
       </div>
     </section>
   );
