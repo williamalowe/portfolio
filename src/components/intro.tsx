@@ -20,7 +20,7 @@ export default function Intro() {
             focus on NextJS, TypeScript and Tailwind.
           </p>
           <Link
-            href="#contact"
+            href="#projects"
             className="group relative mt-8 w-fit px-4 py-2 flex items-center gap-x-2 uppercase font-bold tracking-wide"
           >
             See my works
