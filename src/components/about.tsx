@@ -2,6 +2,7 @@ import { BsCaretDown, BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
 import AboutImage from "./about-image";
 import LinksArrow from "./links-arrow";
 import Link from "next/link";
+import ReturnArrow from "./return-arrow";
 
 export default function About() {
   return (
@@ -33,6 +34,9 @@ export default function About() {
       <Link className="absolute bottom-2 left-[50%]" href="#projects">
         <BsCaretDownFill />
       </Link>
+      <div className="absolute top-16 right-0">
+        <ReturnArrow />
+      </div>
     </section>
   );
 }
