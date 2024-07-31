@@ -1,4 +1,7 @@
+import { BsCaretDown, BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
 import AboutImage from "./about-image";
+import LinksArrow from "./links-arrow";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -27,6 +30,9 @@ export default function About() {
       <h3 className="absolute -left-8 bottom-12 text-4xl text-zinc-950/40 font-bold tracking-wide uppercase -rotate-90">
         About
       </h3>
+      <Link className="absolute bottom-2 left-[50%]" href="#projects">
+        <BsCaretDownFill />
+      </Link>
     </section>
   );
 }
