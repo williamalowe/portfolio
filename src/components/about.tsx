@@ -1,6 +1,5 @@
-import { BsCaretDown, BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
+import { BsCaretDownFill } from "react-icons/bs";
 import AboutImage from "./about-image";
-import LinksArrow from "./links-arrow";
 import Link from "next/link";
 import ReturnArrow from "./return-arrow";
 
