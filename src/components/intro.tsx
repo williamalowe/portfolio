@@ -8,7 +8,7 @@ export default function Intro() {
   return (
     <section
       id="home"
-      className="relative h-screen w-full flex flex-col items-center justify-center"
+      className="relative h-screen w-full flex flex-col items-center justify-center px-24"
     >
       <div className="flex items-center justify-center max-w-[1200px]">
         <div className="flex-1">
@@ -33,8 +33,10 @@ export default function Intro() {
       <div className="w-full max-w-[1200px] flex items-start mt-16">
         <Socials />
       </div>
-      <div className="absolute bottom-16 -right-24">
-        <LinksArrow />
+      <div className="absolute bottom-16 right-0">
+        <LinksArrow 
+          href="#about"
+        />
       </div>
     </section>
   );
