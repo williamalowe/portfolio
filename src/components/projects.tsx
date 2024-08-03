@@ -41,7 +41,9 @@ export default function Projects() {
         </a>
       </div>
       <div className="absolute top-16 right-0">
-        <ReturnArrow />
+        <ReturnArrow 
+          isDark={false}
+        />
       </div>
       <Link className="absolute bottom-2 left-[50%]" href="#experience">
         <BsCaretDownFill />
