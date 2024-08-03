@@ -5,11 +5,13 @@ import { BsArrowRight } from "react-icons/bs";
 
 export default function ProjectItem({
   title,
+  desc,
   index,
   imgURL,
   demoURL,
 }: {
   title: string;
+  desc: string;
   index: number;
   imgURL: string;
   demoURL: string;
@@ -52,7 +54,7 @@ export default function ProjectItem({
           {title}
         </h3>
         <p className="absolute text-xs font-bold top-6 w-fit text-zinc-600 group-hover:top-12 transition">
-          E-Commerce
+          {desc}
         </p>
       </div>
       <div className="flex flex-1 h-[160px] items-center">
@@ -68,9 +70,17 @@ export default function ProjectItem({
           </motion.div>
         </motion.a>
         <motion.div
-          className="absolute bg-red-600 flex-1 w-full h-[400px] top-8 rounded-tl"
+          className="absolute bg-red-600 flex-1 w-full h-[400px] top-8 rounded-tl overflow-hidden"
           variants={image}
-        ></motion.div>
+        >
+          <Image
+            src={imgURL}
+            alt={`${title} screenshot`}
+            width={500}
+            height={500}
+            className="w-full h-[400px]"
+          ></Image>
+        </motion.div>
       </div>
     </motion.div>
   );
