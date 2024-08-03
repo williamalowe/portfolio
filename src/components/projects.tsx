@@ -1,5 +1,6 @@
-import React from 'react'
-import ProjectItem from './project-item'
+import React from "react";
+import ProjectItem from "./project-item";
+import { projects } from "@/_lib/data";
 
 export default function Projects() {
   return (
@@ -8,7 +9,17 @@ export default function Projects() {
       className="relative min-h-screen w-full flex flex-col bg-zinc-50 text-zinc-900 justify-center pt-24"
     >
       <div className="flex flex-col flex-1">
-          <ProjectItem 
+        {projects.map((project, index) => (
+          <ProjectItem
+            key={index}
+            title={project.title}
+            desc={project.description}
+            index={index}
+            imgURL={project.imageUrl}
+            demoURL={project.demoURL}
+          />
+        ))}
+        {/* <ProjectItem 
             title="Project A" 
             index={1} 
             imgURL={'abc'} 
@@ -31,8 +42,8 @@ export default function Projects() {
             index={4} 
             imgURL={'abc'} 
             demoURL={'abc'}          
-          />
+          /> */}
       </div>
     </section>
-  )
+  );
 }

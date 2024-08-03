@@ -10,7 +10,7 @@ export const projects = [
         title: "To *Don't* List",
         description:
           "Simple Habit Tracker",
-        imageUrl: "/todont/.png",
+        imageUrl: "/todont.png",
         demoURL: "https://github.com/williamalowe/next-dockitt",
       },
       {
