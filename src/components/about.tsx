@@ -29,7 +29,9 @@ export default function About() {
         About
       </h3>
       <div className="absolute top-16 right-0">
-        <ReturnArrow />
+        <ReturnArrow 
+          isDark={true}
+        />
       </div>
       <Link className="absolute bottom-2 left-[50%]" href="#projects">
         <BsCaretDownFill />

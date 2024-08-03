@@ -3,6 +3,7 @@ import ProjectItem from "./project-item";
 import { projects } from "@/_lib/data";
 import { BsArrowRight, BsCaretDownFill } from "react-icons/bs";
 import Link from "next/link";
+import ReturnArrow from "./return-arrow";
 
 export default function Projects() {
   return (
@@ -11,6 +12,13 @@ export default function Projects() {
       className="relative min-h-screen w-full flex flex-col bg-zinc-50 text-zinc-900 justify-center"
     >
       <div className="flex flex-col mt-24">
+        <div className="h-[240px] flex flex-col justify-center gap-y-4 px-24">
+          <div className="flex gap-x-8 items-center">
+            <h3 className="text-4xl font-bold tracking-wider">Always building, always learning.</h3>
+            <div className="w-[60px] h-[2px] bg-zinc-600 rounded-full"/>
+          </div>
+          <h5 className="text-zinc-600 tracking-wide text-sm">Here is a small sample of my recent projects.</h5>
+        </div>
         {projects.map((project, index) => (
           <ProjectItem
             key={index}
@@ -31,6 +39,11 @@ export default function Projects() {
         >
           view all projects. <BsArrowRight className="text-zinc-400 group-hover:translate-x-8 transition" />
         </a>
+      </div>
+      <div className="absolute top-16 right-0">
+        <ReturnArrow 
+          isDark={false}
+        />
       </div>
       <Link className="absolute bottom-2 left-[50%]" href="#experience">
         <BsCaretDownFill />

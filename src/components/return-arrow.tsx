@@ -3,7 +3,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function ReturnArrow() {
+export default function ReturnArrow({ isDark }: {
+  isDark: boolean;
+}) {
   return (
     <Link href="#home">
       <motion.div
@@ -21,10 +23,10 @@ export default function ReturnArrow() {
         }}
       >
         <div className="relative w-[2px] h-16">
-          <div className="absolute top-0 left-0 w-[2px] h-16 bg-zinc-50" />
-          <div className="absolute top-0 -left-[4px] w-[2px] h-4 bg-zinc-50 rotate-[30deg]" />
+          <div className={`absolute top-0 left-0 w-[2px] h-16 ${isDark ? 'bg-zinc-50' : 'bg-zinc-800'}`} />
+          <div className={`absolute top-0 -left-[4px] w-[2px] h-4 rotate-[30deg] ${isDark ? 'bg-zinc-50' : 'bg-zinc-800'}`} />
         </div>
-        <p className="-rotate-90 uppercase tracking-wider">Return Home</p>
+        <p className={`rotate-90 uppercase tracking-wider ${isDark && 'text-zinc-50'}`}>Return Home</p>
       </motion.div>
     </Link>
   );
