@@ -14,35 +14,11 @@ export default function Projects() {
             key={index}
             title={project.title}
             desc={project.description}
-            index={index}
+            index={index + 1}
             imgURL={project.imageUrl}
             demoURL={project.demoURL}
           />
         ))}
-        {/* <ProjectItem 
-            title="Project A" 
-            index={1} 
-            imgURL={'abc'} 
-            demoURL={'abc'}          
-          />
-          <ProjectItem 
-            title="Project B" 
-            index={2} 
-            imgURL={'abc'} 
-            demoURL={'abc'}          
-          />
-          <ProjectItem 
-            title="Project C" 
-            index={3} 
-            imgURL={'abc'} 
-            demoURL={'abc'}          
-          />
-          <ProjectItem 
-            title="Project D" 
-            index={4} 
-            imgURL={'abc'} 
-            demoURL={'abc'}          
-          /> */}
       </div>
     </section>
   );
