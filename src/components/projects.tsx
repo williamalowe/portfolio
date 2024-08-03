@@ -15,7 +15,7 @@ export default function Projects() {
             title={project.title}
             desc={project.description}
             index={index + 1}
-            imgURL={project.imageUrl}
+            imgURL={project.imageURL}
             demoURL={project.demoURL}
           />
         ))}

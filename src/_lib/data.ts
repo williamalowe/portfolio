@@ -3,28 +3,28 @@ export const projects = [
       title: "Dockitt",
       description:
         "Kanban-style Task Management",
-      imageUrl: "/dockitt.png",
+      imageURL: "/dockitt.png",
       demoURL: "https://github.com/williamalowe/next-dockitt",
     },
     {
         title: "To *Don't* List",
         description:
           "Simple Habit Tracker",
-        imageUrl: "/todont.png",
+        imageURL: "/todont.png",
         demoURL: "https://github.com/williamalowe/next-dockitt",
       },
       {
           title: "ThreadHundred",
           description:
             "Demo E-Commerce",
-          imageUrl: "/threadhundred.png",
+          imageURL: "/threadhundred.png",
           demoURL: "https://github.com/williamalowe/next-dockitt",
         },
         {
             title: "Diskord",
             description:
               "Home Page Recreation",
-            imageUrl: "/diskord.png",
+            imageURL: "/diskord.png",
             demoURL: "https://github.com/williamalowe/next-dockitt",
           },
   ];
