@@ -28,3 +28,49 @@ export const projects = [
     demoURL: "https://github.com/williamalowe/next-dockitt",
   },
 ];
+
+export const education = [
+  {
+    qualification: "Bachelor of Computer Science",
+    institute: "Deakin University - Melbourne",
+    completion: "Est. 2024",
+  },
+  {
+    qualification: "JavaScript Full Stack Development Course",
+    institute: "The Odin Project - Online",
+    completion: "2024",
+  },
+  {
+    qualification: "Diploma of Information Technology",
+    institute: "Deakin College - Melbourne",
+    completion: "2020",
+  },
+]
+
+export const professional = [
+  {
+    role: "Generalist LLM Trainer/Reviewer",
+    organisation: "Outlier",
+    date: "2024 - Current"
+  },
+  {
+    role: "Freelance Web Developer",
+    organisation: "Personal",
+    date: "2024 - Current"
+  },
+  {
+    role: "Data Entry Team Leader",
+    organisation: "Ipsos Pty Ltd",
+    date: "2022 - 2024"
+  },
+  {
+    role: "Student Frontend Developer",
+    organisation: "Deakin Thoth Tech - OnTrack",
+    date: "2023 - 2023"
+  },
+  {
+    role: "IT Technical Support/Advisor",
+    organisation: "Yea Medical Center",
+    date: "2021 - 2023"
+  },
+]
