@@ -7,7 +7,10 @@ export default function Experience() {
       id="experience"
       className="relative min-h-screen w-full flex flex-col bg-zinc-50 text-zinc-900 justify-center"
     >
-      <div className="flex flex-col mt-24"></div>
+      <div className="flex flex-col mt-24">
+        {/* content here */}
+        
+      </div>
 
       <Link className="absolute bottom-2 left-[50%]" href="#contact">
         <BsCaretDownFill />
