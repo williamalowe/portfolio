@@ -20,10 +20,8 @@ export default function About() {
             bringing digital experiences to life.
           </p>
           <p className="leading-[2rem]">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit non
-            numquam quasi fugiat quisquam iusto ipsa recusandae quia repellendus
-            itaque dolor perferendis vitae nihil officia, dolorum hic beatae
-            ducimus facilis.
+            A soon-to-graduate Computer Science student, react developer, and classic big nerd. I have a wide range of educational 
+            and professional experience with exposure to industries ranging from agriculture/farming to hospitality to government-level social and market research.
           </p>
         </div>
       </div>
