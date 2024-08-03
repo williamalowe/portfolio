@@ -28,12 +28,12 @@ export default function About() {
       <h3 className="absolute -left-8 bottom-12 text-4xl text-zinc-950/40 font-bold tracking-wide uppercase -rotate-90">
         About
       </h3>
-      <Link className="absolute bottom-2 left-[50%]" href="#projects">
-        <BsCaretDownFill />
-      </Link>
       <div className="absolute top-16 right-0">
         <ReturnArrow />
       </div>
+      <Link className="absolute bottom-2 left-[50%]" href="#projects">
+        <BsCaretDownFill />
+      </Link>
     </section>
   );
 }
