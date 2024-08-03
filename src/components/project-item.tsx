@@ -6,12 +6,14 @@ import { BsArrowRight } from "react-icons/bs";
 export default function ProjectItem({
   title,
   desc,
+  tech,
   index,
   imgURL,
   demoURL,
 }: {
   title: string;
   desc: string;
+  tech: string;
   index: number;
   imgURL: string;
   demoURL: string;
@@ -53,8 +55,8 @@ export default function ProjectItem({
         <h3 className="text-zinc-800 font-bold group-hover:text-4xl transition">
           {title}
         </h3>
-        <p className="absolute text-xs font-bold top-6 w-fit text-zinc-600 group-hover:top-12 transition">
-          {desc}
+        <p className="absolute text-xs top-6 w-fit text-zinc-600 group-hover:top-12 transition">
+          <span className="font-bold">{desc}</span>: {tech}
         </p>
       </div>
       <div className="flex flex-1 h-[160px] items-center">
