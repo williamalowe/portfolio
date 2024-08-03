@@ -62,6 +62,7 @@ export default function ProjectItem({
       <div className="flex flex-1 h-[160px] items-center">
         <motion.a
           href={demoURL}
+          target="_blank"
           className="z-20 flex items-center text-zinc-600 font-bold gap-x-4 ml-auto mr-12 px-4 py-2 tracking-wider rounded-full bg-zinc-50 border border-zinc-400/40 text-xs uppercase pr-6"
           initial="inactive"
           whileHover="active"
