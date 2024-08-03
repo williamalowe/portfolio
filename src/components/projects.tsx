@@ -3,6 +3,7 @@ import ProjectItem from "./project-item";
 import { projects } from "@/_lib/data";
 import { BsArrowRight, BsCaretDownFill } from "react-icons/bs";
 import Link from "next/link";
+import ReturnArrow from "./return-arrow";
 
 export default function Projects() {
   return (
@@ -38,6 +39,9 @@ export default function Projects() {
         >
           view all projects. <BsArrowRight className="text-zinc-400 group-hover:translate-x-8 transition" />
         </a>
+      </div>
+      <div className="absolute top-16 right-0">
+        <ReturnArrow />
       </div>
       <Link className="absolute bottom-2 left-[50%]" href="#experience">
         <BsCaretDownFill />
