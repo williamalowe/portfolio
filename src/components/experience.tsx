@@ -13,12 +13,12 @@ export default function Experience() {
         <div className="h-[240px] flex flex-col justify-center gap-y-4 px-24 bg-zinc-900 text-zinc-50">
           <div className="flex gap-x-8 items-center">
             <h3 className="text-4xl font-bold tracking-wider">
-              Always building, always learning.
+              Trying to become the best developer that I can be.
             </h3>
             <div className="w-[60px] h-[2px] bg-zinc-600 rounded-full" />
           </div>
           <h5 className="text-zinc-600 tracking-wide text-sm">
-            Here is a small sample of my recent projects.
+            Here is a quick overview of my recent experiences.
           </h5>
         </div>
         <div className="flex px-24 mt-16">
