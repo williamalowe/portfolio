@@ -81,7 +81,7 @@ export default function ProjectItem({
             alt={`${title} screenshot`}
             width={500}
             height={500}
-            className="object-contain object-center rotate-6"
+            className="object-contain rotate-6 w-auto"
           ></Image>
         </motion.div>
       </div>
