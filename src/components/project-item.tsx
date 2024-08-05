@@ -73,7 +73,7 @@ export default function ProjectItem({
           </motion.div>
         </motion.a>
         <motion.div
-          className="absolute flex-1 w-full h-[400px] top-8 rounded-tl overflow-hidden"
+          className="absolute flex-1 items-center justify-end w-full h-[400px] top-8 rounded-tl overflow-hidden"
           variants={image}
         >
           <Image
@@ -81,7 +81,7 @@ export default function ProjectItem({
             alt={`${title} screenshot`}
             width={500}
             height={500}
-            className="object-contain object-center rotate-6"
+            className="object-contain rotate-6 w-auto"
           ></Image>
         </motion.div>
       </div>
