@@ -18,11 +18,22 @@ export default function Socials() {
       {socialLinks.map((link, index) => (
         <>
           {index !== 0 && "/"}
-          <li key={link.name} className="opacity-60 hover:opacity-100 transition duration-300">
-            <a href={link.href}>{link.name}</a>
+          <li
+            key={link.name}
+            className="opacity-60 hover:opacity-100 transition duration-300"
+          >
+            <a href={link.href} target="_blank">
+              {link.name}
+            </a>
           </li>
         </>
       ))}
+      /
+      <li className="opacity-60 hover:opacity-100 transition duration-300">
+        <a href={"/cv.pd"} download>
+          CV Download
+        </a>
+      </li>
     </ul>
   );
 }

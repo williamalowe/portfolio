@@ -1,50 +1,48 @@
-import { BsCaretDownFill } from "react-icons/bs";
+import { BsArrowRight, BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
 import ReturnArrow from "./return-arrow";
 import Link from "next/link";
+import Socials from "./socials";
 
 export default function Contact() {
   return (
-  <section
-    id="contact"
-    className="relative min-h-screen w-full flex flex-col bg-zinc-900 text-zinc-50"
-  >
-    <div className="flex-1 flex flex-col mt-24">
-
-      <div className="h-[240px] flex flex-col justify-center gap-y-4 px-24">
-        <div className="flex gap-x-8 items-center">
-          <h3 className="text-4xl font-bold tracking-wider">Let&apos;s work together!</h3>
-          <div className="w-[60px] h-[2px] bg-zinc-600 rounded-full"/>
+    <section
+      id="contact"
+      className="relative h-screen w-full flex bg-zinc-900 text-zinc-50 px-24 pt-24"
+    >
+      <div className="flex-1 flex flex-col max-w-[1200px] gap-y-12">
+        <div className="relative flex flex-col">
+          <h3 className="z-10 text-4xl tracking-wider leading-[4rem] font-bold">
+            Let&apos;s work together.
+          </h3>
+          <p className="z-10 text-zinc-100">
+            This could be the start of something great!
+          </p>
+          <div className="top-0 left-0 absolute h-[120px] w-[120px] bg-[repeating-linear-gradient(-45deg,transparent,#52525b,transparent_2px,transparent_12px)] rounded-full" />
         </div>
-        <h5 className="text-zinc-600 tracking-wide text-sm">Shoot me a message or contact me directly.</h5>
-      </div>
-
-      <div className="px-24 flex-1 flex gap-x-12 pb-24">
-        <form action="" className="bg-zinc-50 flex-1 rounded-lg text-zinc-800">
-          MESSAGE FORM HERE
-        </form>
-        <div className="flex-1 flex flex-col gap-y-4 justify-center">
-            <h3 className="text-2xl tracking-wider">Message me on: </h3>
-            <div>
-              <h5 className="uppercase tracking-wider font-bold text-zinc-400/40">Email Address: </h5>
-              <p className="ml-6 text-zinc-200">WilliamLoweDev@Gmail.com</p>
-            </div>
-            <div>
-              <h5 className="uppercase tracking-wider font-bold text-zinc-400/40">LinkedIn: </h5>
-              <p className="ml-6 text-zinc-200">linkedin.com/in/william-lowe-b08707297/</p>
-            </div>
-            <div>
-              <h5 className="uppercase tracking-wider font-bold text-zinc-400/40">Instgram: </h5>
-              <p className="ml-6 text-zinc-200">instagram.com/will.lowe.webdev/</p>
-            </div>
+        <div className="flex-1 flex flex-col gap-y-4 justify-center">        
+          <div>
+            <h3 className="text-2xl font-bold text-zinc-400/40">Email</h3>
+            <p className="ml-8 italic">WilliamLoweDev@Gmail.com</p>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-zinc-400/40">GitHub</h3>
+            <a href="https://github.com/williamalowe" target="_blank" className="ml-8 italic">github.com/williamalowe</a>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-zinc-400/40">LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/william-lowe-b08707297/" target="_blank" className="ml-8 italic">linkedin.com/in/william-lowe-b08707297/</a>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-zinc-400/40">Instagram</h3>
+            <a href="https://www.instagram.com/will.lowe.webdev/" target="_blank" className="ml-8 italic">instagram.com/will.lowe.webdev/</a>
+          </div>
         </div>
       </div>
-    </div>
-   
-    <div className="absolute top-16 right-0">
-      <ReturnArrow 
-        isDark={true}
-      />
-    </div>
-  </section>
-  )
+      <div className="absolute bottom-[20%] right-4">
+        <ReturnArrow 
+          isDark
+        />
+      </div>
+    </section>
+  );
 }
