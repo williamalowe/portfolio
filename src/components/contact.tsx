@@ -38,9 +38,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Link className="absolute bottom-2 left-[50%]" href="#projects">
-        <BsCaretUpFill />
-      </Link>
     </section>
   );
 }
