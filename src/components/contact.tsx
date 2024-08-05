@@ -26,15 +26,15 @@ export default function Contact() {
           </div>
           <div>
             <h3 className="text-2xl font-bold text-zinc-400/40">GitHub</h3>
-            <a href="https://github.com/williamalowe" className="ml-8 italic">github.com/williamalowe</a>
+            <a href="https://github.com/williamalowe" target="_blank" className="ml-8 italic">github.com/williamalowe</a>
           </div>
           <div>
             <h3 className="text-2xl font-bold text-zinc-400/40">LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/william-lowe-b08707297/" className="ml-8 italic">linkedin.com/in/william-lowe-b08707297/</a>
+            <a href="https://www.linkedin.com/in/william-lowe-b08707297/" target="_blank" className="ml-8 italic">linkedin.com/in/william-lowe-b08707297/</a>
           </div>
           <div>
             <h3 className="text-2xl font-bold text-zinc-400/40">Instagram</h3>
-            <a href="https://www.instagram.com/will.lowe.webdev/" className="ml-8 italic">instagram.com/will.lowe.webdev/</a>
+            <a href="https://www.instagram.com/will.lowe.webdev/" target="_blank" className="ml-8 italic">instagram.com/will.lowe.webdev/</a>
           </div>
         </div>
       </div>
