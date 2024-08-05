@@ -68,9 +68,6 @@ export default function Experience() {
           </div>
         </div>
       </div>
-      <div className="absolute top-16 right-0">
-        <ReturnArrow isDark={true} />
-      </div>
       <Link
         className="absolute bottom-2 left-[50%]"
         href="#contact"
