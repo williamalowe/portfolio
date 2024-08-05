@@ -1,8 +1,11 @@
+"use client"
+
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import IntroPicture from "./intro-picture";
 import Socials from "./socials";
 import LinksArrow from "./links-arrow";
+import { motion } from "framer-motion";
 
 export default function Intro() {
   return (
@@ -10,7 +13,18 @@ export default function Intro() {
       id="home"
       className="relative h-screen w-full flex flex-col items-center justify-center px-24"
     >
-      <div className="flex items-center justify-center max-w-[1200px]">
+      <motion.div className="flex items-center justify-center max-w-[1200px]"
+      initial={{
+        opacity: 0,
+        y: 24
+      }}
+      animate={{
+        opacity: 1,
+        y: 0
+      }}
+      transition={{
+        delay: 0.15
+      }}>
         <div className="flex-1">
           <h1 className="text-6xl font-bold tracking-[0.20rem] leading-[5rem] w-[80%]">
             a fresh & creative react developer
@@ -29,15 +43,35 @@ export default function Intro() {
           </Link>
         </div>
         <IntroPicture />
-      </div>
-      <div className="w-full max-w-[1200px] flex items-start mt-16">
+      </motion.div>
+      <motion.div className="w-full max-w-[1200px] flex items-start mt-16"
+      initial={{
+        opacity: 0,
+        y: 24
+      }}
+      animate={{
+        opacity: 1,
+        y: 0
+      }}
+      transition={{
+        delay: 0.25
+      }}>
         <Socials />
-      </div>
-      <div className="absolute bottom-[20%] right-0">
+      </motion.div>
+      <motion.div className="absolute bottom-[20%] right-0"
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      transition={{
+        delay: 0.25
+      }}>
         <LinksArrow 
           href="#about"
         />
-      </div>
+      </motion.div>
     </section>
   );
 }

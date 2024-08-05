@@ -73,7 +73,7 @@ export default function ProjectItem({
           </motion.div>
         </motion.a>
         <motion.div
-          className="absolute flex-1 items-center justify-end w-full h-[400px] top-8 rounded-tl overflow-hidden"
+          className="absolute flex-1 items-end justify-end w-full h-[400px] top-8 rounded-tl overflow-hidden"
           variants={image}
         >
           <Image

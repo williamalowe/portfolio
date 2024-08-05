@@ -34,7 +34,17 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-50 px-8 py-4 flex items-center w-full bg-zinc-50">
+    <motion.header 
+      className="fixed top-0 left-0 z-50 px-8 py-4 flex items-center w-full bg-zinc-50"
+      initial={{
+        opacity: 0,
+        y: -24
+      }}
+      animate={{
+        opacity: 1,
+        y: 0
+      }}
+    >
       <Link href="#home">
         <div className="w-12 h-12 -skew-x-[16deg] rounded-md bg-zinc-900 flex items-center justify-center">
           <h5 className="text-white font-bold tracking-widest skew-x-[16deg]">WL</h5>
@@ -58,6 +68,6 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 }
