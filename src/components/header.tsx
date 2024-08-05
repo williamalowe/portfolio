@@ -105,7 +105,7 @@ export default function Header() {
             <ul className="relative flex-1 flex flex-col justify-around text-zinc-50 ml-8 uppercase text-2xl font-bold tracking-wider italic">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href}>{link.name}</Link>
+                  <Link href={link.href} onClick={() => setShowPages(false)}>{link.name}</Link>
                 </li>
               ))}
             </ul>
