@@ -38,6 +38,11 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <div className="absolute bottom-[20%] right-4">
+        <ReturnArrow 
+          isDark
+        />
+      </div>
     </section>
   );
 }
