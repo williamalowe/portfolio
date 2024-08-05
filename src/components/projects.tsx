@@ -40,9 +40,6 @@ export default function Projects() {
           view all projects. <BsArrowRight className="text-zinc-400 group-hover:translate-x-8 transition" />
         </a>
       </div>
-      <Link className="absolute bottom-2 left-[50%]" href="#experience">
-        <BsCaretDownFill />
-      </Link>
     </section>
   );
 }
