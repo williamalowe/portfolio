@@ -20,9 +20,9 @@ export default function LinksArrow({ href }: { href: string }) {
           repeatType: "reverse",
         }}
       >
-        <p className="-rotate-90 uppercase tracking-wider">Scroll down</p>
-        <div className="relative w-[2px] h-32">
-          <div className="absolute top-0 left-0 w-[2px] h-32 bg-zinc-600" />
+        <p className="-rotate-90 uppercase text-xs tracking-wider">Scroll down</p>
+        <div className="relative w-[2px] h-16">
+          <div className="absolute top-0 left-0 w-[2px] h-16 bg-zinc-600" />
           <div className="absolute bottom-0 -left-[4px] w-[2px] h-4 bg-zinc-600 -rotate-[30deg]" />
         </div>
       </motion.div>
