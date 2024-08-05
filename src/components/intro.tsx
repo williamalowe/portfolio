@@ -33,7 +33,7 @@ export default function Intro() {
       <div className="w-full max-w-[1200px] flex items-start mt-16">
         <Socials />
       </div>
-      <div className="absolute bottom-16 right-0">
+      <div className="absolute bottom-[20%] right-0">
         <LinksArrow 
           href="#about"
         />
