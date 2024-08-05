@@ -6,6 +6,7 @@ import Header from "@/components/header";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: "400",
+  preload: false,
 });
 
 export const metadata: Metadata = {
