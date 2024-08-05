@@ -1,31 +1,44 @@
-import { BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
+import { BsArrowRight, BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
 import ReturnArrow from "./return-arrow";
 import Link from "next/link";
-import MessageForm from "./message-form";
+import Socials from "./socials";
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative h-screen w-full flex flex-col justify-center gap-y-12"
+      className="relative h-screen w-full flex bg-zinc-900 text-zinc-50 px-24 pt-24"
     >
-    <div className="flex flex-col mt-24 pb-12">
-      <div className="h-[240px] flex flex-col justify-center gap-y-4 px-24 bg-zinc-900 text-zinc-50">
-        <div className="flex gap-x-8 items-center">
-          <h3 className="text-4xl font-bold tracking-wider">
-            Let&apos;s Connect.
+      <div className="flex-1 flex flex-col max-w-[1200px] gap-y-12">
+        <div className="relative flex flex-col">
+          <h3 className="z-10 text-4xl tracking-wider leading-[4rem] font-bold">
+            Let&apos;s work together.
           </h3>
-          <div className="w-[60px] h-[2px] bg-zinc-600 rounded-full" />
+          <p className="z-10 text-zinc-100">
+            This could be the start of something great!
+          </p>
+          <div className="top-0 left-0 absolute h-[120px] w-[120px] bg-[repeating-linear-gradient(-45deg,transparent,#52525b,transparent_2px,transparent_12px)] rounded-full" />
         </div>
-        <h5 className="text-zinc-600 tracking-wide text-sm">
-          Feel free to reach out regarding employment, projects, suggestions, or even just to say hi!
-        </h5>
+        <div className="flex-1 flex flex-col gap-y-4 justify-center">        
+          <div>
+            <h3 className="text-2xl font-bold text-zinc-400/40">Email</h3>
+            <p className="ml-8 italic">WilliamLoweDev@Gmail.com</p>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-zinc-400/40">GitHub</h3>
+            <a href="https://github.com/williamalowe" className="ml-8 italic">github.com/williamalowe</a>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-zinc-400/40">LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/william-lowe-b08707297/" className="ml-8 italic">linkedin.com/in/william-lowe-b08707297/</a>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold text-zinc-400/40">Instagram</h3>
+            <a href="https://www.instagram.com/will.lowe.webdev/" className="ml-8 italic">instagram.com/will.lowe.webdev/</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div className="flex-1 px-24 mt-16">
-      <MessageForm />
-    </div>
-      <Link className="absolute bottom-2 left-[50%]" href="#home">
+      <Link className="absolute bottom-2 left-[50%]" href="#projects">
         <BsCaretUpFill />
       </Link>
     </section>
