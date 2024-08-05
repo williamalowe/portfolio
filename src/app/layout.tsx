@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className={`${roboto.className} bg-zinc-50 text-zinc-900`}>
         <Header />
-        {children}
+        {/* {children} */}
       </body>
     </html>
   );
