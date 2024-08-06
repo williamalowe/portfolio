@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative h-screen w-full flex bg-zinc-900 text-zinc-50 px-24 pt-24"
+      className="relative min-h-screen w-full flex bg-zinc-900 text-zinc-50 px-8 sm:px-24 pt-24"
     >
       <div className="flex-1 flex flex-col max-w-[1200px] gap-y-12">
         <div className="relative flex flex-col">
@@ -19,29 +19,47 @@ export default function Contact() {
           </p>
           <div className="top-0 left-0 absolute h-[120px] w-[120px] bg-[repeating-linear-gradient(-45deg,transparent,#52525b,transparent_2px,transparent_12px)] rounded-full" />
         </div>
-        <div className="flex-1 flex flex-col gap-y-4 justify-center">        
+        <div className="flex-1 flex flex-col gap-y-4 justify-center">
           <div>
-            <h3 className="text-2xl font-bold text-zinc-400/40">Email</h3>
+            <h3 className="sm:text-2xl font-bold text-zinc-400/40">Email</h3>
             <p className="ml-8 italic">WilliamLoweDev@Gmail.com</p>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-zinc-400/40">GitHub</h3>
-            <a href="https://github.com/williamalowe" target="_blank" className="ml-8 italic">github.com/williamalowe</a>
+            <h3 className="sm:text-2xl font-bold text-zinc-400/40">GitHub</h3>
+            <a
+              href="https://github.com/williamalowe"
+              target="_blank"
+              className="ml-8 italic"
+            >
+              github.com/williamalowe
+            </a>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-zinc-400/40">LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/william-lowe-b08707297/" target="_blank" className="ml-8 italic">linkedin.com/in/william-lowe-b08707297/</a>
+            <h3 className="sm:text-2xl font-bold text-zinc-400/40">LinkedIn</h3>
+            <a
+              href="https://www.linkedin.com/in/william-lowe-b08707297/"
+              target="_blank"
+              className="ml-8 italic"
+            >
+              linkedin.com/in/william-lowe-b08707297/
+            </a>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-zinc-400/40">Instagram</h3>
-            <a href="https://www.instagram.com/will.lowe.webdev/" target="_blank" className="ml-8 italic">instagram.com/will.lowe.webdev/</a>
+            <h3 className="sm:text-2xl font-bold text-zinc-400/40">
+              Instagram
+            </h3>
+            <a
+              href="https://www.instagram.com/will.lowe.webdev/"
+              target="_blank"
+              className="ml-8 italic"
+            >
+              instagram.com/will.lowe.webdev/
+            </a>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[20%] right-4">
-        <ReturnArrow 
-          isDark
-        />
+      <div className="hidden sm:block absolute bottom-[20%] right-4">
+        <ReturnArrow isDark />
       </div>
     </section>
   );
