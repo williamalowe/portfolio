@@ -11,9 +11,9 @@ export default function Intro() {
   return (
     <section
       id="home"
-      className="relative min-h-screen w-full flex flex-col items-center justify-center px-8 sm:px-24 py-[80px]"
+      className="relative min-h-screen w-full flex flex-col items-center justify-center px-8 sm:px-24 pb-12"
     >
-      <motion.div className="flex flex-col sm:flex-row items-center justify-center max-w-[1200px]"
+      <motion.div className="mt-[80px] flex flex-col sm:flex-row items-center justify-center max-w-[1200px] gap-x-4"
       initial={{
         opacity: 0,
         y: 24
@@ -56,7 +56,7 @@ export default function Intro() {
       transition={{
         delay: 0.25
       }}>
-        {/* <Socials /> */}
+        <Socials />
       </motion.div>
       <motion.div className="absolute hidden sm:block bottom-[20%] right-0"
       initial={{
