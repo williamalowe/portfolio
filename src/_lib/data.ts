@@ -23,7 +23,7 @@ export const projects = [
   {
     title: "Diskord",
     description: "Home Page Recreation",
-    tech: "React (Vite) / CSS-Modoules / Framer Motion",
+    tech: "React (Vite) / CSS-Modules / Framer Motion",
     imageURL: "/diskord.png",
     demoURL: "https://github.com/williamalowe/next-dockitt",
   },

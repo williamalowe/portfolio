@@ -14,7 +14,7 @@ export default function Socials() {
     },
   ];
   return (
-    <ul className="flex gap-x-4">
+    <ul className="flex flex-wrap gap-x-4">
       {socialLinks.map((link, index) => (
         <>
           {index !== 0 && "/"}

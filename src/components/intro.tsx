@@ -11,9 +11,9 @@ export default function Intro() {
   return (
     <section
       id="home"
-      className="relative h-screen w-full flex flex-col items-center justify-center px-24"
+      className="relative min-h-screen w-full flex flex-col items-center justify-center px-8 sm:px-24 pb-12"
     >
-      <motion.div className="flex items-center justify-center max-w-[1200px]"
+      <motion.div className="mt-[80px] flex flex-col sm:flex-row items-center justify-center max-w-[1200px] gap-x-4"
       initial={{
         opacity: 0,
         y: 24
@@ -26,16 +26,16 @@ export default function Intro() {
         delay: 0.15
       }}>
         <div className="flex-1">
-          <h1 className="text-6xl font-bold tracking-[0.20rem] leading-[5rem] w-[80%]">
+          <h1 className="text-2xl sm:text-6xl font-bold tracking-[0.20rem] sm:leading-[5rem] w-[80%]">
             a fresh & creative react developer
           </h1>
-          <p className="leading-[2rem] text-zinc-600">
+          <p className="mt-8 leading-[2rem] text-zinc-600">
             Hi I&apos;m William Lowe. A Melbourne-based web developer with a
-            focus on NextJS, TypeScript and Tailwind.
+            focus on <span className="italic">NextJS</span>, <span className="italic">TypeScript</span> and <span className="italic">Tailwind</span>.
           </p>
           <Link
             href="#projects"
-            className="group relative mt-8 w-fit px-4 py-2 flex items-center gap-x-2 uppercase font-bold tracking-wide"
+            className="mb-8 group relative mt-8 w-fit px-4 py-2 flex items-center gap-x-2 uppercase font-bold tracking-wide"
           >
             See my works
             <BsArrowRight className="opacity-80 group-hover:translate-x-2 transition duration-300" />
@@ -58,7 +58,7 @@ export default function Intro() {
       }}>
         <Socials />
       </motion.div>
-      <motion.div className="absolute bottom-[20%] right-0"
+      <motion.div className="absolute hidden sm:block bottom-[20%] right-0"
       initial={{
         opacity: 0,
       }}

@@ -13,7 +13,7 @@ export default function IntroPicture() {
         width={500}
         height={500}
         priority
-        className="w-[360px] h-[360px] bg-zinc-800 rounded-full border-4 border-zinc-800 grayscale"
+        className="aspect-square w-[240px] md:w-[360px] bg-zinc-800 rounded-full border-4 border-zinc-800 grayscale"
       />
     </div>
   );
