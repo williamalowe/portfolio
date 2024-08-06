@@ -85,7 +85,7 @@ export default function Experience() {
             <h3 className="text-2xl font-bold tracking-wider">Recent Work.</h3>
             <div className="absolute w-12 h-12 bg-zinc-900/10 rounded-full left-[calc(50%-24px)]" />
           </div>
-          <ul className="flex flex-col gap-y-4">
+          <ul className="flex flex-col gap-y-6 mt-8">
             {professional.map((prof) => (
               <li key={prof.role}>
                 <div className="flex items-center ">
@@ -107,7 +107,7 @@ export default function Experience() {
             </h3>
             <div className="absolute w-12 h-12 bg-zinc-900/10 rounded-full left-[calc(50%-24px)]" />
           </div>
-          <ul className="flex flex-col gap-y-4">
+          <ul className="flex flex-col gap-y-6 mt-8">
             {education.map((edu) => (
               <li key={edu.qualification}>
                 <div className="flex items-center ">
