@@ -34,6 +34,7 @@ export default function Projects() {
         <h5 className="text-zinc-600 uppercase tracking-wide text-sm">There&apos;s More</h5>
         <a 
           href="https://github.com/williamalowe"
+          target="_blank"
           className="group flex text-4xl gap-x-8 font-bold tracking-wider"
         >
           view all projects. <BsArrowRight className="text-zinc-400 group-hover:translate-x-8 transition" />
