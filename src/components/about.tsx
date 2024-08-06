@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative min-h-screen w-full flex bg-zinc-900 text-zinc-50 justify-center px-24 py-24"
+      className="relative min-h-screen w-full flex bg-zinc-900 text-zinc-50 justify-center px-8 sm:px-24 py-24"
     >
       <div className="flex flex-col lg:flex-row items-center justify-center max-w-[1200px] gap-x-4">
         <div className="flex-1 flex items-center justify-center">
