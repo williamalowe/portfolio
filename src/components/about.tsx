@@ -7,14 +7,14 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative min-h-screen w-full flex bg-zinc-900 text-zinc-50 justify-center px-24 pt-24"
+      className="relative min-h-screen w-full flex bg-zinc-900 text-zinc-50 justify-center px-24 py-24"
     >
-      <div className="flex flex-col md:flex-row items-center justify-center max-w-[1200px] gap-x-4">
+      <div className="flex flex-col lg:flex-row items-center justify-center max-w-[1200px] gap-x-4">
         <div className="flex-1 flex items-center justify-center">
           <AboutImage />
         </div>
-        <div className="flex-1 flex flex-col gap-y-4">
-          <p className="text-4xl tracking-wider leading-[4rem]">
+        <div className="mt-8 lg:mt-0 flex-1 flex flex-col gap-y-4">
+          <p className="text-2xl sm:text-4xl tracking-wider sm:leading-[4rem]">
             I am a passionate{" "}
             <span className="font-bold">front-end developer</span> who loves
             bringing digital experiences to life.
