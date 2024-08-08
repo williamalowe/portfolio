@@ -49,7 +49,7 @@ export default function Experience() {
                 Qualifications.
               </h3>
             </div>
-            <ul className="flex flex-col gap-y-2 items-end text-right">
+            <ul className="mt-8 flex flex-col gap-y-2 items-end text-right">
               {education.map((edu) => (
                 <li key={edu.qualification}>
                   <div className="flex items-center justify-end">

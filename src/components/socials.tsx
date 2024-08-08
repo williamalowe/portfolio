@@ -30,7 +30,7 @@ export default function Socials() {
       ))}
       /
       <li className="opacity-60 hover:opacity-100 transition duration-300">
-        <a href={"/cv.pd"} download>
+        <a href={"/cv.pdf"} download>
           CV Download
         </a>
       </li>
