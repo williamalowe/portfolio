@@ -4,7 +4,7 @@ export const projects = [
     description: "Kanban-style Task Management",
     tech: "NextJS / Tailwind / Local Storage / Framer Motion",
     imageURL: "/dockitt.png",
-    demoURL: "https://github.com/williamalowe/next-dockitt",
+    demoURL: "https://dockitt.vercel.app/",
   },
   {
     title: "To *Don't* List",
@@ -18,14 +18,14 @@ export const projects = [
     description: "Demo E-Commerce",
     tech: "React (Vite) / CSS-Modules / ContextAPI / Framer Motion",
     imageURL: "/threadhundred.png",
-    demoURL: "https://github.com/williamalowe/next-dockitt",
+    demoURL: "https://threadhundred.netlify.app/",
   },
   {
     title: "Diskord",
     description: "Home Page Recreation",
     tech: "React (Vite) / CSS-Modules / Framer Motion",
     imageURL: "/diskord.png",
-    demoURL: "https://github.com/williamalowe/next-dockitt",
+    demoURL: "https://wl-diskord.netlify.app/",
   },
 ];
 
